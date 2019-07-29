@@ -1,6 +1,6 @@
 # Manager Mobile App
 
-<a href="https://github.com/ping58972/manager-mobile-app"><img src="https://b.imge.to/2019/07/29/kGBX6.png"  target="_blank" alt="Manager-mobile-app"></a>
+<a href="https://github.com/ping58972/manager-mobile-app"><img src="https://b.imge.to/2019/07/29/kGBX6.png"  target="_blank" alt="Manager-mobile-app"/> <img src="https://a.imge.to/2019/07/29/kGYf0.png"/><img src="https://c.imge.to/2019/07/29/kGuUq.png"/><img src="https://c.imge.to/2019/07/29/kGRG4.png"/><img src="https://c.imge.to/2019/07/29/kGr12.png"/><img src="https://b.imge.to/2019/07/29/kGauO.png"/></a>
 <br />
 This mobile app is for practice react native, react reduxe, and google firebase that implement by android studio.
 
