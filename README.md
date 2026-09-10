@@ -1,60 +1,61 @@
 # Manager Mobile App
 
-<a href="https://github.com/ping58972/manager-mobile-app"><img src="https://b.imge.to/2019/07/29/kGBX6.png"  target="_blank" alt="Manager-mobile-app"/> <img src="https://a.imge.to/2019/07/29/kGYf0.png"/><img src="https://c.imge.to/2019/07/29/kGuUq.png"/><img src="https://c.imge.to/2019/07/29/kGRG4.png"/><img src="https://c.imge.to/2019/07/29/kGr12.png"/><img src="https://b.imge.to/2019/07/29/kGauO.png"/></a>
-<br />
-This mobile app is for practice react native, react reduxe, and google firebase that implement by android studio.
+A React Native employee-management application with authentication, employee records, and create/edit/delete workflows backed by Firebase.
 
-## Built with
+## What I built
 
-- [react](#) javascript framework for mobile app.
-- [react-redux](#) javascript framework for mobile app.
-- [react native](#) React framework for mobile app.
-- [android studio](#) For simulator mobile visual.
-- [Google Firebase](#) Cloud database and Authenication.
-- More detail... see package.json
+- Implemented a mobile login flow with Firebase Authentication.
+- Built employee listing, creation, editing, and deletion screens.
+- Stored employee records in Firebase Realtime Database under the authenticated user.
+- Connected screens through React Native Router Flux.
+- Managed authentication, form, and employee state with Redux reducers and Redux Thunk asynchronous actions.
+- Created reusable React Native form and list components.
+- Configured Android and iOS native project targets through the React Native toolchain.
 
-## Getting Started
+## Technology stack
 
-### Prerequisites
+- **Languages:** JavaScript/JSX, Android Java, iOS Objective-C, Gradle/Groovy, XML, and JSON.
+- **Frameworks:** React 16.8.6 and React Native 0.60.4.
+- **State and navigation:** Redux 4, React Redux 7.1, Redux Thunk, and React Native Router Flux.
+- **Backend services:** Firebase Authentication and Firebase Realtime Database.
+- **Libraries:** Lodash and react-native-communications.
+- **Development tools:** Node.js, npm, Metro, Babel, Jest, React Test Renderer, ESLint, Android Studio, Android SDK, Xcode, CocoaPods, Watchman, Flow configuration, and Buck configuration.
+- **Engineering skills:** mobile UI development, authentication state, asynchronous data flow, CRUD operations, form handling, navigation, cloud persistence, and platform-aware debugging.
 
-Nodejs with npm - lastest version.
+## Architecture
 
+```text
+src/
+├── App.js                 # Firebase initialization and Redux Provider
+├── Router.js              # Login and employee-management navigation
+├── actions/               # Authentication and employee async actions
+├── reducers/              # Auth, employee form, and employee state
+└── components/            # Login, list, create, edit, and shared UI
 ```
-Nodejs 12.6.0
-```
 
-### Installing
+## Getting started
 
-Download or clone the repository, then
+The project uses a legacy React Native 0.60.4 toolchain.
 
-```
+```bash
+git clone https://github.com/ping58972/manager-mobile-app.git
+cd manager-mobile-app
 npm install
+npm start
+npx react-native run-android
 ```
 
-### run the app
+Run tests and lint:
 
-For Android:
-
-```
-react-native run-android
-```
-
-For ios:
-
-```
-react-native run-ios
+```bash
+npm test
+npm run lint
 ```
 
-## Authors
+## Security note
 
-- **(Ping) Nalongsone Daddank** - _Initial work_ - [ping58972](https://github.com/ping58972)
+The historical source contains a client-side Firebase configuration. Before production use, move configuration to an appropriate environment-management strategy and review Firebase Authentication and database security rules.
 
-## License
+## Author
 
-This project is licensed under the MIT License
-
-## Acknowledgments
-
-- Hat tip to anyone whose code was used
-- Inspiration
-- etc
+**(Ping) Nalongsone Dandank** — [ping58972](https://github.com/ping58972)
